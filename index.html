@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      <nav>
+        <div class="logo orange">AMANSHAH</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <button class="cta-btn">Get Involved</button>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Parallax Effect -->
+    <section
+      class="hero"
+      id="hero"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <div class="hero-overlay">
+        <h1>Make a Difference</h1>
+        <p>
+          Join me in creating positive change through business and activism.
+        </p>
+        <button class="cta-btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about" data-aos="fade-up">
+      <div class="about-content">
+        <div
+          class="about-text"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+        >
+          <h2>About Me</h2>
+          <p>
+            I'm Aman Shah, a passionate activist and entrepreneur dedicated to
+            using business as a force for good. My mission is to bring about
+            positive social change while supporting sustainable practices in
+            businesses worldwide.
+          </p>
+        </div>
+        <div
+          class="about-img"
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          style="width: 500px; height: 500px; background: url(./download.png); background-position: center; background-size: contain; background-repeat: no-repeat; border: 1px solid black;border-radius: 20px;"
+        >
+          <!-- <img src="./download.png" style="width: 500px; height: 500px;" alt="Aman Shah" /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      class="services"
+      id="services"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <h2>What I Do</h2>
+      <div class="services-container">
+        <div
+          class="service"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <div class="service-icon">
+            <img src="https://via.placeholder.com/60" alt="Consulting Icon" />
+          </div>
+          <h3>Consulting</h3>
+          <p>
+            Helping businesses implement sustainable practices for positive
+            social and environmental impact.
+          </p>
+        </div>
+        <div
+          class="service"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <div class="service-icon">
+            <img src="https://via.placeholder.com/60" alt="Activism Icon" />
+          </div>
+          <h3>Activism</h3>
+          <p>
+            Leading initiatives to advocate for social justice, equality, and
+            ethical business practices.
+          </p>
+        </div>
+        <div
+          class="service"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <div class="service-icon">
+            <img src="https://via.placeholder.com/60" alt="Workshops Icon" />
+          </div>
+          <h3>Workshops</h3>
+          <p>
+            Conducting workshops to teach businesses how to integrate corporate
+            social responsibility into their operations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section
+      class="portfolio"
+      id="portfolio"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <h2>My Work & Impact</h2>
+      <p>
+        Take a look at some of the projects I've been a part of and the impact
+        we've made together.
+      </p>
+
+      <div class="portfolio-container">
+        <div
+          class="portfolio-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/600x400" alt="Project 1" />
+          <div class="portfolio-overlay">
+            <h3>Project 1: Sustainable Business Strategy</h3>
+            <p>
+              Helping a leading corporation develop a sustainability strategy
+              that improved its environmental footprint.
+            </p>
+            <a href="javascript:void(0)" class="cta-btn" data-project="1"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/600x400" alt="Project 2" />
+          <div class="portfolio-overlay">
+            <h3>Project 2: Social Justice Advocacy</h3>
+            <p>
+              Collaborating with local activists to launch a campaign that
+              raised awareness for social justice reform.
+            </p>
+            <a href="javascript:void(0)" class="cta-btn" data-project="2"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/600x400" alt="Project 3" />
+          <div class="portfolio-overlay">
+            <h3>Project 3: Corporate Social Responsibility</h3>
+            <p>
+              Guiding a startup on implementing corporate social responsibility
+              programs that align with its values.
+            </p>
+            <a href="javascript:void(0)" class="cta-btn" data-project="3"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+      <h2>My Journey</h2>
+      <div class="timeline-container">
+        <!-- Education Section -->
+        <div class="timeline-column">
+          <h3 class="timeline-heading">Education</h3>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2010 - 2015</span>
+            <h4>High School Degree</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2015 - 2017</span>
+            <h4>Bachelor's Degree</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2017 - 2021</span>
+            <h4>Master's Degree</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="timeline-column">
+          <h3 class="timeline-heading">Experience</h3>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2018 - 2022</span>
+            <h4>UI/UX Designer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2018 - 2022</span>
+            <h4>Full-Stack Developer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2018 - 2022</span>
+            <h4>Frontend Developer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      class="gallery"
+      id="gallery"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <div
+          class="gallery-item"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/300" alt="Gallery Image 1" />
+        </div>
+        <div
+          class="gallery-item"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/300" alt="Gallery Image 2" />
+        </div>
+        <div
+          class="gallery-item"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="https://via.placeholder.com/300" alt="Gallery Image 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section
+      class="achievements"
+      id="achievements"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <h2>Achievements</h2>
+      <div class="achievement-container">
+        <div
+          class="achievement-item"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <h3>Award for Best Social Entrepreneur</h3>
+          <p>Received in 2021 for impactful work in sustainable business.</p>
+        </div>
+        <div
+          class="achievement-item"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+        >
+          <h3>Top 30 Under 30</h3>
+          <p>
+            Recognized by Forbes in 2022 for contributions to social change.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="contact-section"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out by filling out the form below.</p>
+      <div class="contact_container">
+        <div class="left">
+          <img
+            src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1734409008~exp=1734412608~hmac=9c905b0b4b45c2a82c1120f2ee31e90cfc9a829ffe13afbaa4325e03d5d952a0&w=900"
+            alt="Contact Illustration"
+          />
+        </div>
+        <div class="right">
+          <h3>Contact Now</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="grid">
+        <div class="sub_grid1">
+          <h4>Aman's Portfolio</h4>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+          </p>
+        </div>
+        <div class="sub_grid2">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      let scrollDirection = 0; // 0: initial, 1: scrolling down, -1: scrolling up
+
+      // Initialize AOS
+      AOS.init({
+        once: false, // Keeps the animations active when scrolling up
+        duration: 800,
+        easing: "ease-in-out",
+      });
+
+      // Detect scroll direction
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > scrollDirection) {
+          scrollDirection = currentScroll; // Scrolling down
+        } else {
+          scrollDirection = currentScroll; // Scrolling up
+        }
+
+        // Reset AOS animations when scrolling up
+        AOS.refresh();
+      });
+    </script>
+  </body>
+</html>

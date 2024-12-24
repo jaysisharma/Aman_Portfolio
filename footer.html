@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman's Portfolio</title>
+    <style>
+      /* Basic reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #111; /* Dark background */
+        color: white;
+        min-height: 100vh;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-section h2 {
+        font-size: 2em;
+        color: #ffd700;
+        margin-bottom: 20px;
+      }
+
+      .contact-section p {
+        font-size: 1.1em;
+        color: #000;
+        margin-bottom: 15px;
+      }
+
+      .contact-form {
+        /* max-width: 600px; */
+        /* margin: 0 auto; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1em;
+        border: 1px solid #555;
+        /* background-color: #222; */
+        color: white;
+        border-radius: 5px;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: #ffd700;
+      }
+
+      .contact-form button {
+        padding: 10px;
+        background-color: #ffd700;
+        color: #111;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .contact-form button:hover {
+        background-color: #e0c200;
+      }
+
+      footer {
+        background: #0a2342;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      .sub_grid1,
+      .sub_grid2,
+      .sub_grid3 {
+        padding: 10px;
+        text-align: left;
+      }
+
+      .sub_grid1 h4,
+      .sub_grid2 h4,
+      .sub_grid3 h4 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #ffd700; /* Gold color for the headings */
+      }
+
+      .sub_grid1 p,
+      .sub_grid2 p,
+      .sub_grid3 p {
+        font-size: 1em;
+        margin-bottom: 15px;
+        color: #ddd;
+      }
+
+      .sub_grid1 ul,
+      .sub_grid2 ul {
+        list-style-type: none;
+      }
+
+      .sub_grid1 ul li,
+      .sub_grid2 ul li {
+        margin: 8px 0;
+      }
+
+      .sub_grid1 a,
+      .sub_grid2 a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .sub_grid1 a:hover,
+      .sub_grid2 a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-info p {
+        color: #ddd;
+        font-size: 1em;
+      }
+
+      .contact-info a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      .divider {
+        margin: 20px auto;
+        width: 80%;
+        border: 0;
+        border-top: 1px solid #555;
+      }
+
+      .copyright {
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sub_grid1,
+        .sub_grid2,
+        .sub_grid3 {
+          text-align: center;
+        }
+      }
+
+      .contact_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        width: 1400px;
+        background-color: #fff;
+      }
+
+      .left {
+        width: 50%;
+      }
+
+      .contact_container .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .left img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .contact_container .right h3{
+        color: #000;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out by filling out the form below.</p>
+      <div class="contact_container">
+        <div class="left">
+          <img
+            src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1734409008~exp=1734412608~hmac=9c905b0b4b45c2a82c1120f2ee31e90cfc9a829ffe13afbaa4325e03d5d952a0&w=900"
+            alt="Contact Illustration"
+          />
+        </div>
+        <div class="right">
+            <h3>Contact Now</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="grid">
+        <!-- Sub Grid 1: Portfolio Intro -->
+        <div class="sub_grid1">
+          <h4>Aman's Portfolio</h4>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+          </p>
+          <p><strong>Keep Rising 🚀</strong> Connect with me over live chat!</p>
+        </div>
+
+        <!-- Sub Grid 2: Quick Links -->
+        <div class="sub_grid2">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Experience</a></li>
+          </ul>
+        </div>
+
+        <!-- Sub Grid 3: Contact Info -->
+        <div class="sub_grid3 contact-info">
+          <h4>Contact Info</h4>
+          <p>Phone: <a href="tel:+9779808046761">+977 980-804-6761</a></p>
+          <p>
+            Email:
+            <a href="mailto:amanshah@gmail.com">amanshah@gmail.com</a>
+          </p>
+          <p>Address: Balkhu, Kathmandu, Nepal</p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="copyright">
+        &copy; 2024 Aman's Portfolio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
